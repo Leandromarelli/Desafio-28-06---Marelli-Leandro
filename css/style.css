@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+h1{
+    font-size: 5rem;
+    text-align: center;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    padding: 50px;
+}
+h2{
+    font-size: 4rem;
+    text-align: center;
+    color: black;
+    margin: 50px 50px;
+}
+h3{
+   font-size: 4rem; 
+   color: black;
+}
+
+body{
+    font-weight: bold;
+    background-size: cover;
+    font-family: 'oswald';
+    height: 100vh;
+}  
+
+/*NAVBAR*/
+
+.navbar{
+    grid-area: navbar;
+    height: 85px;      
+    display: flex;
+    padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(74, 71, 71, 0.3);
+}
+.navbar__ulcontainer{
+    display:flex;
+    list-style: none;
+    margin-right: 30px;
+} 
+.navbar__ulcontainer li{
+    border-radius: 3px;
+    margin: 0 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.navbar__ulcontainer li a{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    color: black;
+    padding-bottom: 5px; 
+}
+.navbar__ulcontainer li a:hover{
+    transition: 200ms;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    transform: translateY(20%);
+}
+
+
+
+
+
+/* FOOTER*/
+
+.footer__container{
+    background-color: rgba(74, 71, 71, 0.3);
+    height: 10vh;      
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer__div{
+    display:flex;
+    list-style: none;
+    justify-items: center;
+}
+.footer__div li{
+    display: flex;
+    margin: 0 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+.footer__div li a img{
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+h4{
+    margin-right: 20px;
+}
+.button__start{
+    padding: 7px 13px;
+    text-decoration: none;
+    font-size: 2rem;
+    display: block;
+    color: black;
+    padding-bottom: 5px; 
+}
+.button__start:hover{
+    transition: 0.4s;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+}
+/* INDEX - @media (min-width: 1024px) */
+
+@media (min-width: 1024px){
+    #grillaIndex{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: 75px 1fr repeat(4, 1fr);
+        grid-template-areas: 
+        "navbar navbar"
+        "header header"
+        "sectionIG main"
+        "sectionFB main"
+        "sectionYT whatsapp"
+        "footer footer";
+        column-gap: 30px;
+        row-gap: 10px;
+        height: 100vh;
+    }
+    header#header{
+        grid-area: header;
+        text-align: center;  
+    }
+    main#main{
+        grid-area: main;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    section#whatsapp{
+        grid-area: whatsapp;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+    section#whatsapp a img{
+        width: 100px;
+        height: 100px;
+    }
+    section#whatsapp p{
+        font-size: 2.5rem; 
+        background-color: rgba(255, 255, 255, 0.9);
+        color: rgb(52, 44, 44);
+        width: 500px;
+    }
+    section#sectionIG{
+        grid-area: sectionIG;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 20px 40px;
+        align-items: center;
+    }
+    #sectionIG img{
+        width: 250px;
+        height: 400px;
+    }
+    .pTituloRedes{
+        color: black;
+        font-size: 2.5rem;
+        text-decoration:none;
+        margin-bottom: 10px;
+    }
+    section#sectionFB{
+        grid-area: sectionFB;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 20px 40px;
+        align-items: center;
+    }
+    #sectionFB img{
+        width: 250px;
+        height: 400px;
+    }
+    section#sectionYT{
+        grid-area: sectionYT;
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 20px 40px;
+        align-items: center;
+    }
+    #sectionYT img{
+        width: 250px;
+        height: 400px;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .p__gral{
+        text-align: center;
+        font-size: 2.5rem; 
+        background-color: rgba(255, 255, 255, 0.9);
+        color: rgb(52, 44, 44);
+       
+    }
+    }
+
+/*@MEDIA (max-width: 1024px) */
+
+@media (max-width: 1024px){
+
+    #grillaIndex{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "navbar"
+        "header"
+        "main"
+        "footer";
+        }
+        .navbar img{
+            display: none;
+        }
+        .navbar h3{
+            display: none;
+        }
+        section#sectionIG{
+            display: none;
+        }
+        section#sectionFB{
+            display: none;
+        }
+        section#sectionYT{
+            display: none;
+        }
+        section#whatsapp{
+            display: none;
+        }
+        footer .button__start{
+            display: none;
+        }
+        footer h4{
+            display: none;
+        }
+        .footer__container{
+            background-color: #fff;
+            justify-content: center;
+        }
+        .footer__div{
+            display: flex;
+            align-content: center;
+            flex-direction: row;
+            justify-content:space-between;
+        }
+        .p__gral{
+            text-align: center;
+            font-size: 2.5rem; 
+            background-color: rgba(255, 255, 255, 0.9);
+            color: black;  
+            padding: 5px 10px;
+        }
+        #header img{
+            width: 100vw;
+         }
+    }
+
+
+/*@MEDIA (max-width: 767px) */
+
+@media (max-width: 768px){
+    #grillaIndex{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "header"
+        "navbar"
+        "main"
+        "footer";
+    }
+    .navbar img{
+        display: none;
+    }
+    .navbar h3{
+        display: none;
+    }
+    section#sectionIG{
+        display: none;
+    }
+    section#sectionFB{
+        display: none;
+    }
+    section#sectionYT{
+        display: none;
+    }
+    section#whatsapp{
+        display: none;
+    }
+    .button__start{
+        display: none;
+    }
+    footer h4{
+        display: none;
+    }
+    .footer__container{
+        background-color: #fff;
+        justify-content: center;
+    }
+    .p__gral{
+        text-align: center;
+        font-size: 2.5rem; 
+        background-color: rgba(255, 255, 255, 0.9);
+        color: black;  
+        padding: 5px 10px;
+    }
+    #header img{
+        width: 100vw;
+     }
+    .navbar{
+        display: flex;        
+        height: auto;
+        background-color: #fff;
+        justify-content: center;
+    }
+    .navbar__ulcontainer{
+        flex-direction: column;
+    }
+    .navbar__ulcontainer li{
+        width: 70vw;
+        margin-top: 5px;
+    }
+    .navbar__ulcontainer li a{
+        border: 1px black solid;
+        border-radius: 10px;
+        
+    }
+    .navbar__ulcontainer li a:hover{
+        transition: 0.4s;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+}
+
+/* QUE QUERES COMER? - @media (min-width: 1024px)*/
+
+.gridQueQueresComer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr) auto;
+    grid-template-areas: 
+    "navbar"
+    "header"    
+    "menudesplegable"
+    "footer";
+    row-gap: 20px;
+}
+.menudesplegable{
+    grid-area: menudesplegable;
+    display: flex;  
+    justify-content:space-evenly;   
+}
+.submenu{
+    display:flex;
+    list-style: none;
+    font-size: 20px;
+    padding-left: 10%;
+    margin-bottom: 10px;
+}
+.submenu li{
+    list-style: none;
+}
+.submenu li a{
+    font-size: 2rem;
+    display: block;
+    color: black;
+    padding:5px 5px; 
+    list-style: none;
+}
+.submenu > li a:hover{
+    background-color: rgba(98, 98, 98, 0.9);
+    border-radius: 10px;
+    transition: 200ms;
+}
+.submenu li ul{
+    display: none;
+    position: absolute;
+    min-width: 100px;
+}
+.submenu li:hover ul{
+    display: block;
+}
+.submenu li ul li{
+    position: relative;
+}
+
+/*@MEDIA (max-width: 1024px) */
+
+@media (max-width: 1024px){
+#nav img, h3{
+    display: none;
+}
+.menudesplegable{
+    justify-content:space-evenly;
+}
+}
+
+/*@MEDIA (max-width: 480px) */
+
+@media (max-width: 480px){
+
+    .menudesplegable{
+        flex-direction: column;
+    }
+
+}
+
+/*RECETAS Y RECOMENDACIONES - @media (min-width: 1024px)*/
+
+@media (min-width: 1024px){
+body{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "navbar"
+    "header"
+    "recetas"
+    "footer"
+}
+.imgRedes{
+    max-width:450; 
+    height:300;
+    border-radius: 10px;
+}
+.recetasContenedor{
+    grid-area: recetas;
+}
+.recetasSub{
+    display: flex;
+}
+.recetasLink{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.recetaP{
+    font-size: 2.5rem; 
+    color: black;
+    text-align: left;
+    padding-left: 10px;
+ }
+.btn__instagram{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    align-self: center;
+    width: 200px;
+    margin-bottom: 30px;
+}
+.btn__instagram:hover{
+    transform: translateX(20px);
+    transition: 1s;
+}
+.recetaP span{
+    text-decoration: underline;
+}
+}
+
+/* @media (max-width: 1024px)  */
+
+@media (max-width: 1024px){
+body{
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "navbar"
+    "header"
+    "recetas"
+    "footer"
+}
+.recetasSub{
+    display: flex;
+    margin: 50px 20px;  
+}
+.imgRedes{
+    max-width:300px; 
+    max-height:200px;
+}
+.recetasLink{
+    display: flex;
+    flex-direction: column;
+}
+.imgRedes{
+    border-radius: 10px;
+}
+.btn__instagram{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    align-self:center;
+    width: 200px;
+}
+.recetaP{
+    font-size: 2rem; 
+    color: black;
+    text-align: left;
+    padding-left: 10px;
+    max-width: 450px;
+    max-height: 270px;
+    overflow-y: scroll;
+ }
+
+}
+
+
+/*@MEDIA (max-width: 480px) */
+
+@media (max-width: 480px){
+    .recetasSub{
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+    }
+    .recetasLink{
+        flex-direction: column; 
+        justify-content: flex-start;
+    }
+    .recetaP{
+        max-height: 200px; 
+    }
+    .btn__instagram{
+        background-color: rgba(98, 98, 98, 0.9);
+        width: 150px;
+        text-align: center;
+    }    
+    .imgRedes{
+        max-width:300px; 
+        max-height:200px;
+    }
+    .recetaP{
+        max-width: 300px;
+    }
+}
+
+/* COMPLEMENTARIOS - @media (min-width: 1024px) */
+
+@media (min-width: 1024px){
+#grillacomplementarios{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px auto auto 1fr auto;
+    grid-template-areas: 
+    "navbar"
+    "header"
+    "filtrar"
+    "listaProd"
+    "footer";
+    row-gap: 20px;
+}
+h1{
+    text-align: center;
+}
+#filtrar{
+    grid-area: filtrar;
+    font-size: 1.5rem;
+    margin-left: 10vw;
+    max-width: 200px;
+    border: 1px solid black;
+    padding-left: 1vw;
+}
+#filtrar ul{
+    list-style: none;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
+section#listaProd{
+    grid-area: listaProd;
+}
+.listaProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;  
+}
+.listaProductos li{
+    margin: 30px 30px;
+}
+.listaProductos li img{
+    width: 300px;
+    height: 300px;
+}
+.descripcion{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#cbox1{
+    margin-top: 2vh;
+}
+}
+
+/* @media (max-width: 1024px) */
+
+@media (max-width: 1024px){
+
+    h1{
+        text-align: center;
+    }
+    #filtrar{
+        grid-area: filtrar;
+        font-size: 1.5rem;
+        margin-left: 10vw;
+        max-width: 200px;
+        border: 1px solid black;
+        padding-left: 1vw;
+    }
+    #filtrar ul{
+        list-style: none;
+        margin-top: 2vh;
+        margin-left: 1vw;
+    }
+    
+    section#listaProd{
+        grid-area: listaProd;
+    }
+    .listaProductos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;  
+    }
+    .listaProductos li{
+        margin: 30px 30px;
+    }
+    .listaProductos li img{
+        width: 300px;
+        height: 300px;
+    }
+    .descripcion{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    #cbox1{
+        margin-top: 2vh;
+    }
+}
+/*@MEDIA (max-width: 480px) */
+
+@media (max-width: 480px){
+    .listaProductos li img{
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+/*CONTACTO* @media (min-width: 1024px) */
+
+@media (min-width: 1024px){
+
+.container{
+    text-align: center;       
+    flex-direction: column; 
+    border-radius: 10px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.form__contact{
+    background-color: #ccc;
+    margin: auto;
+    max-width: 300px;
+    padding: 30px 20px;
+    box-shadow: 0 5px 10px rgba(0 0 0 / 40%);
+    border-radius: 10px;
+    margin-bottom: 2.5px;    
+}
+.input__contact{
+    text-align: left;
+    padding-left: 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.button__contact{
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+}
+}
+
+/* @media (max-width: 1024px) */
+
+@media (max-width: 1024px){
+    .container{
+        text-align: center;       
+        flex-direction: column; 
+        border-radius: 10px;
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .form__contact{
+        background-color: #ccc;
+        margin: auto;
+        max-width: 300px;
+        padding: 30px 20px;
+        box-shadow: 0 5px 10px rgba(0 0 0 / 40%);
+        border-radius: 10px;
+        margin-bottom: 2.5px;    
+    }
+    .input__contact{
+        text-align: left;
+        padding-left: 3px;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    .button__contact{
+        width: 70px;
+        text-align: center;
+        border-radius: 5px;
+    }
+}
+
+/* Para este caso no tengo que hacer 
+modificaciones adicionales en el codigo porque ya es responsive */
+
+/*@MEDIA (max-width: 480px) */
+
+@media (max-width: 480px){
+}

@@ -5,71 +5,116 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Que queres comer?</title>
+    <!-- Carga de css Bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Carga de mi css -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
-<body class="gridQueQueresComer">
-<nav id="nav" class="navbar">
-    <img src="../assets/img/Olla Logo.png" alt="logo la titina - comidas" width="80" class="logo">
-    <h3>La titina </h3>
-    <ul class="navbar__ulcontainer">   
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="quequerescomer.html">Que queres comer?</a></li>
-        <li><a href="recetas.html">Recetas</a></li>
-        <li><a href="complementarios.html">Productos complementarios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
+<body class="d-flex flex-column justify-content">
+  <div class="container-fluid">
+    <!-- NAV BS-->
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <div class="container-fluid row">
+          <a class="navbar-brand col-sm-3 ml-5" href="../index.html">
+            <img src="../assets/img/Olla Logo.png" alt="logo la titina - comidas" width="80" class="d-none d-lg-block">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-sm-8" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quequerescomer.html">QUÉ QUERÉS COMER?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recetas.html">Recetas y Recomendaciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="complementarios.html">Productos Complementarios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- END NAV BS-->
+
 <header>
     <h1>Qué querés comer?</h1> <div>
 </header>
-    <div class="menudesplegable">
-        <ul class="submenu">
-            <li class="pastaConRelleno"><a href="#">Pastas con Relleno</a>
-                <ul class="menuOculto">
-                    <li><a href="#">Sorrentinos</a></li>
-                    <li><a href="#">Ravioles</a></li>
-                    <li><a href="#">Raviolones</a></li>
-                    <li><a href="#">Capelletti</a></li>
-                    <li><a href="#">Canelones</a></li>
-                </ul>
-            </li>
-        </ul>
-        <ul class="submenu">
-            <li class="pastaSinRelleno"><a href="#">Pastas sin Relleno</a>
-                <ul class="menuOculto">
-                    <li><a href="#">Cintas</a></li>
-                    <li><a href="#">Fetuccini</a></li>
-                    <li><a href="#">Tallarines</a></li>
-                    <li><a href="#">Ñoquis</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-</body>
-<footer class="footer__container">
-    <a href="#nav" class="button__start">Ir al comienzo</a>
-    <ul class="footer__div">    
-        <li>
-            <a href="https://www.instagram.com/latitina" target="_blank" >
-                <img src="../assets/img/instagram.png" alt="logo instagram" id="instagram" >
-            </a>
-        </li>
-        <li>    
-            <a href="#" target="_blank">
-                <img src="../assets/img/facebook.png" alt="logo facebook" id="facebook">
-            </a>
-        </li>  
-        <li>
-            <a href="#" target="_blank">
-                <img src="../assets/img/whatsapp.png" alt="logo whatsapp" id="whatsapp">
-            </a>
-        </li>  
-        <li>
-            <a href="#" target="_blank">
-                <img src="../assets/img/youtube.png" alt="logo youtube" id="youtube">
-            </a>
-        </li>  
+<div class="d-flex flex-row">
+  <div class="dropdown ml-5">
+    <button class="btn btn-secondary dropdown-toggle btn-lg pe-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Pastas con relleno
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item border-bottom" href="#">Sorrentinos</a></li>
+      <li><a class="dropdown-item border-bottom pt-2" href="#">Ravioles</a></li>
+      <li><a class="dropdown-item border-bottom pt-2" href="#">Raviolones</a></li>
+      <li><a class="dropdown-item border-bottom pt-2" href="#">Capelletti</a></li>
+      <li><a class="dropdown-item" href="#">Canelones</a></li>
     </ul>
-    <h4 class="copyright">Copyright</h4>
+  </div>
+  <div class="dropdown ml-5">
+    <button class="btn btn-secondary dropdown-toggle btn-lg pe-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      Pastas sin relleno
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a class="dropdown-item border-bottom" href="#">Cintas</a></li>
+      <li><a class="dropdown-item border-bottom pt-2" href="#">Fetuccini</a></li>
+      <li><a class="dropdown-item border-bottom pt-2" href="#">Tallarines</a></li>
+      <li><a class="dropdown-item" href="#">Ñoquis</a></li>
+    </ul>
+  </div>
+</div>
+
+<!-- FOOTER BS -->
+<footer class="bg-light text-center text-black margin-top-auto">
+      <!-- Grid container -->
+  <div class="d-inline-flex bd-highlight container-fluid p-4 border-top justify-content-center" style="background-color: #ffffff;">
+        <!-- Section: Social media -->
+    <section class="mb-4 mr-6 col-11">
+        <!-- Instagram -->
+      <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
+          <img src="../assets/img/instagram.png" alt="logo instagram" width="20px" height="20px">
+      </a>
+        <!-- Facebook  -->
+        <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
+          <img src="../assets/img/facebook.png" alt="logo facebook" width="20px" 
+          height="20px"  >
+      </a>
+        <!-- Youtube -->
+        <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
+          <img src="../assets/img/youtube.png" alt="logo youtube" width="20px" 
+          height="20px"  >
+      </a>
+        <!-- Whatsapp -->
+      <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
+          <img src="../assets/img/whatsapp.png" alt="logo whatsapp" width="20px" 
+          height="20px">
+      </a>
+    </section>
+        <!-- Section: Social media -->
+    <a href="#nav">
+        <button type="button" class="btn btn-lg btn-secondary text-dark " style="background-color: #fff">subir</button>
+    </a>
+  </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);"> © 2022 Copyright:
+       <a class="text-dark" href="https://latitina.com/"> Latitina.com</a>
+  </div>
+      <!-- Copyright -->
 </footer>
+<!-- END FOOTER BS -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+crossorigin="anonymous"></script>
+</body>
 </html>

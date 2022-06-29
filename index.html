@@ -5,96 +5,157 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <!-- Carga de css Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- Carga de mi css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-<div id="grillaIndex">
- <nav id="nav" class="navbar">
-    <img src="assets/img/Olla Logo.png" alt="logo la titina - comidas" width="80" class="logo">
-    <h3>La titina</h3>
-    <ul class="navbar__ulcontainer">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="pages/quequerescomer.html">Que queres comer?</a></li>
-        <li><a href="pages/recetas.html">Recetas</a></li>
-        <li><a href="pages/complementarios.html">Productos complementarios</a></li>
-        <li><a href="pages/contacto.html">Contacto</a></li>
-    </ul>
- </nav>    
-    <header id="header">
-        <img src="assets/img/LA TITINA.png" alt="Logo marca"> 
-    </header>
-    <main id="main">
-        <div>
-            <p class="p__gral">
-            Hola! Antes que nada, gracias por estar en nuestro sitio. 
-            <br>Somos Orne y Lea quienes creamos “La Titina”. 
-            <br>Disfrutamos tanto de las comidas de la abuela que necesitábamos que vos también entiendas de que se trata.            
-            </p>
-            <h2>"Hoy cocina la abuela"</h2>
-        </div>
-        <p class="p__gral">
-             Orne es chef y además trae un don natural en sus manos. Amé cada plato que hizo y por eso es que empezamos con este sueño. 
-            <br>
-            <br>Hoy podemos decir que los sabores que propone “la Titina” no sólo quedarán en nuestra memoria sino que también 
-            <br>podemos compartirlo con vos. 
-            <br>
-            <br>Sentarse en la mesa a comer en familia es algo especial, por eso nuestra <span>Misión</span> es poder hacerte vivir hermosos momentos al combinar sabores tradicionales de la abuela, con el toque profesional de una chef.
-            Que lo disfrutes.
-            <br>
-            <br>
-            Orne y Lea.
-        </p>
-    </main>
-    <section id="whatsapp">
-        <a href="#">
-            <img src="assets/img/whatsapp.png" alt="Escribir al whatsapp">
-        </a>
-        <p>Podes escribirnos al Whatsapp para hacer tu pedido o sacarte tus dudas!</p>
+<body class="d-flex flex-column">
+<div class="container-fluid"> 
+<!-- NAV BS-->
+<nav class="navbar navbar-expand-lg navbar-light border-bottom" style="background-color: #ffffff;">
+    <div class="container-fluid row">
+      <a class="navbar-brand col-sm-3 ml-5" href="index.html">
+        <img src="assets/img/Olla Logo.png" alt="logo la titina - comidas" width="80" class="d-none d-lg-block">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse col-sm-8" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/quequerescomer.html">Qué querés comer?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/recetas.html">Recetas y Recomendaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/complementarios.html">Productos Complementarios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- END NAV BS-->   
+ 
+  <header id="header" class="d-flex justify-content-center">
+      <img src="assets/img/LA TITINA.png" alt="Logo marca"> 
+  </header>
+ <main id="main">
+  <section class="d-flex flex-column justify-content-center p-4 m-5 border-top border-bottom">
+    <p class="h2 text-center m-4">
+    Hola! Antes que nada, gracias por estar en nuestro sitio. 
+    <br>
+    <br>Somos Orne y Lea quienes creamos “La Titina”. 
+    <br>
+    <br>Disfrutamos tanto de las comidas de la abuela que necesitábamos que vos también entiendas de que se trata.            
+    </p>
+  </section>  
+
+
+<!--  CARDS BS-->
+<aside class="d-flex flex-inline bd-highlight container-fluid p-4 justify-content-center space-between border-bottom" style="background-color: #ffffff;">
+  <div class="card px-5 py-3 m-3 d-xs-none d-sm-none d-md-block d-lg-block" style="width: 40rem;">
+    <img src="assets/img/perfilig.jpeg" alt="Perfil instagram" class="card-img-top rounded-bottom" >
+    <a href="https://www.instagram.com/latitina">
+      <button type="button" class="btn btn-lg btn-secondary mt-3 w-100" style="background-color: rgb(131, 58, 180)">Ir a Instagram</button>
+    </a>
+    <div class="card-body">
+      <p class="card-text h4 text-dark">Dale al botón, seguinos y mirá todas las ideas</p>
+      <small class="text-muted h5">Qué comer en pocos pasos</small>
+    </div>
+  </div>
+  <div class="card px-5 py-3 m-3 d-xs-none d-sm-none d-md-block d-lg-block" style="width: 40rem;">
+    <img src="assets/img/perfilfb.jpeg" alt="Perfil facebook" class="card-img-top rounded-bottom" >
+    <a href="#">
+      <button type="button" class="btn btn-lg btn-secondary mt-3 w-100" style="background-color: rgb(24, 119, 242)">Ir a Facebook</button>
+    </a>
+    <div class="card-body">
+      <p class="card-text h4 text-bold">Clic al botón para conectarte con nuestra página</p>
+      <small class="text-muted h5">Unite a nuestra comunidad</small>
+    </div>
+  </div>
+  <div class="card px-5 py-3 m-3 d-xs-none d-sm-none d-md-block d-lg-block" style="width: 40rem;">
+    <img src="assets/img/perfilyt.jpeg" alt="Perfil youtube" class="card-img-top rounded-bottom" >
+    <a href="#">
+      <button type="button" class="btn btn-lg btn-secondary mt-3 w-100" style="background-color: rgb(255, 0, 0)">Ir a Youtube</button>
+    </a>
+    <div class="card-body">
+      <p class="card-text h4 text-dark">Con el botón te suscribis a nuestro canal</p>
+      <small class="text-muted h5">Mirá videos más largos y seguí paso a paso cada receta</small>
+    </div>
+  </div> 
+</aside>
+<!-- END CARDS BS-->
+
+<h2 class="display-2 text-center my-5">"Hoy cocina la abuela"</h2>
+
+<section class="d-flex flex-column justify-content-center p-4 m-5">
+<p class="h3 text-center m-4">
+     Orne es chef y además trae un don natural en sus manos. Amé cada plato que hizo y por eso es que empezamos con este sueño. 
+    <br>
+    <br>Hoy podemos decir que los sabores que propone “la Titina” no sólo quedarán en nuestra memoria sino que también 
+    <br>podemos compartirlo con vos. 
+    <br>
+    <br>Sentarse en la mesa a comer en familia es algo especial, por eso nuestra <span>Misión</span> es poder hacerte vivir hermosos momentos 
+    <br>al combinar sabores tradicionales de la abuela, con el toque profesional de una chef.
+    Que lo disfrutes.
+    <br>
+</p>
+<p class="h2 text-center m-4">
+  Orne y Lea.
+</p>
+</section>
+
+<!-- footer BS -->
+<footer class="bg-light text-center text-black mt-auto">
+      <!-- Grid container -->
+  <div class="d-inline-flex bd-highlight container-fluid p-4 border-top justify-content-center" style="background-color: #ffffff;">
+        <!-- Section: Social media -->
+    <section class="mb-4 mr-6 col-11">
+        <!-- Instagram -->
+      <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
+          <img src="assets/img/instagram.png" alt="logo instagram" width="20px" height="20px">
+      </a>
+        <!-- Facebook  -->
+        <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
+          <img src="assets/img/facebook.png" alt="logo facebook" width="20px" 
+          height="20px"  >
+      </a>
+        <!-- Youtube -->
+        <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
+          <img src="assets/img/youtube.png" alt="logo youtube" width="20px" 
+          height="20px"  >
+      </a>
+        <!-- Whatsapp -->
+      <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
+          <img src="assets/img/whatsapp.png" alt="logo whatsapp" width="20px" 
+          height="20px">
+      </a>
     </section>
-    <section id="sectionIG">
-        <a href="https://www.instagram.com/latitina">
-           <p class="pTituloRedes">Seguinos en Instagram</p>
-        </a>
-        <img src="assets/img/perfilig.jpeg" alt="Perfil instagram">
-    </section>
-    <section id="sectionFB">
-        <a href="#">
-           <p class="pTituloRedes">Miralo en Facebook</p>
-        </a>
-         <img src="assets/img/perfilfb.jpeg" alt="perfil facebook">
-    </section>
-    <section id="sectionYT">
-        <a href="#">
-           <p class="pTituloRedes">Nuestro canal de YouTube</p>
-        </a>
-        <img src="assets/img/perfilyt.jpeg" alt="perfil youtube"> 
-    </section>
-    <footer class="footer__container">
-       <a href="#nav" class="button__start">Ir al comienzo</a>
-       <ul class="footer__div">    
-           <li>
-               <a href="https://www.instagram.com/latitina" target="_blank" >
-                   <img src="assets/img/instagram.png" alt="logo instagram" id="instagram" >
-               </a>
-           </li>
-           <li>    
-               <a href="#" target="_blank">
-                   <img src="assets/img/facebook.png" alt="logo facebook" id="facebook">
-               </a>
-           </li>  
-           <li>
-               <a href="#" target="_blank">
-                   <img src="assets/img/whatsapp.png" alt="logo whatsapp" id="whatsapp">
-               </a>
-           </li>  
-           <li>
-               <a href="#" target="_blank">
-                   <img src="assets/img/youtube.png" alt="logo youtube" id="youtube">
-               </a>
-           </li>  
-       </ul>
-       <h4 class="copyright">Copyright</h4>
-    </footer>
+        <!-- Section: Social media -->
+    <a href="#nav">
+        <button type="button" class="btn btn-lg btn-secondary text-dark " style="background-color: #fff">subir</button>
+    </a>
+  </div>
+      <!-- Grid container -->
+      <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);"> © 2022 Copyright:
+       <a class="text-dark" href="https://latitina.com/"> Latitina.com</a>
+  </div>
+      <!-- Copyright -->
+</footer>
+<!-- END FOOTER BS -->
+
 </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
+crossorigin="anonymous"></script>
 </body>
 </html>

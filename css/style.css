@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-*{
-    margin:0;
-    padding:0;
-    outline:0;
-    box-sizing: border-box;
-}
 html{
     font-size: 62.5%;
+    height: 100vh;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-family: 'oswald';
+    height: 100vh;
+}  
 h1{
     font-size: 5rem;
     text-align: center;
@@ -17,25 +19,34 @@ h1{
     margin-bottom: 50px;
     padding: 50px;
 }
-h2{
-    font-size: 4rem;
-    text-align: center;
-    color: black;
-    margin: 50px 50px;
-}
-h3{
-   font-size: 4rem; 
-   color: black;
+
+
+nav ul{
+    font-size: 2em;
+    gap: 2em;
 }
 
-body{
-    font-weight: bold;
-    background-size: cover;
-    font-family: 'oswald';
-    height: 100vh;
-}  
+footer{
+    margin-top: auto;
+}
 
-/*NAVBAR*/
+/* COMPLEMENTARIOS */
+/* 
+#filtrar{
+    grid-area: filtrar;
+    font-size: 1.5rem;
+    margin-left: 10vw;
+    max-width: 200px;
+    border: 1px solid black;
+    padding-left: 1vw;
+}
+#filtrar ul{
+    list-style: none;
+    margin-top: 2vh;
+    margin-left: 1vw;
+} */
+
+/*NAVBAR
 
 .navbar{
     grid-area: navbar;
@@ -72,8 +83,10 @@ body{
     transform: translateY(20%);
 }
 
-/* FOOTER*/
+*/
 
+/* FOOTER*/
+/* 
 .footer__container{
     background-color: rgba(74, 71, 71, 0.3);
     height: 10vh;      
@@ -93,7 +106,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 } 
-.footer__div li a img{
+.footerSection a img{
     text-decoration: none;
     font-size: 2rem;
     display: block;
@@ -117,7 +130,13 @@ h4{
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 5px;
 }
-/* INDEX - @media (min-width: 1024px) */
+.logoFooter{
+    
+} */
+
+/* COMENTO PARA APLICAR LOS CAMBIOS DE CSS BS
+
+/* INDEX - @media (min-width: 1024px) 
 
 @media (min-width: 1024px){
     #grillaIndex{
@@ -215,7 +234,7 @@ h4{
     }
     }
 
-/*@MEDIA (max-width: 1024px) */
+/*@MEDIA (max-width: 1024px) 
 
 @media (max-width: 1024px){
 
@@ -275,7 +294,7 @@ h4{
     }
 
 
-/*@MEDIA (max-width: 767px) */
+/*@MEDIA (max-width: 767px)
 
 @media (max-width: 768px){
     #grillaIndex{
@@ -350,7 +369,7 @@ h4{
 
 }
 
-/* QUE QUERES COMER? - @media (min-width: 1024px)*/
+/* QUE QUERES COMER? - @media (min-width: 1024px)
 
 .gridQueQueresComer{
     display: grid;
@@ -402,7 +421,7 @@ h4{
     position: relative;
 }
 
-/*@MEDIA (max-width: 1024px) */
+/*@MEDIA (max-width: 1024px) 
 
 @media (max-width: 1024px){
 #nav img, h3{
@@ -413,7 +432,7 @@ h4{
 }
 }
 
-/*@MEDIA (max-width: 480px) */
+/*@MEDIA (max-width: 480px) 
 
 @media (max-width: 480px){
 
@@ -423,7 +442,7 @@ h4{
 
 }
 
-/*RECETAS Y RECOMENDACIONES - @media (min-width: 1024px)*/
+/*RECETAS Y RECOMENDACIONES - @media (min-width: 1024px)
 
 @media (min-width: 1024px){
 body{
@@ -476,7 +495,7 @@ body{
 }
 }
 
-/* @media (max-width: 1024px)  */
+/* @media (max-width: 1024px)  
 
 @media (max-width: 1024px){
 body{
@@ -525,7 +544,7 @@ body{
 }
 
 
-/*@MEDIA (max-width: 480px) */
+/*@MEDIA (max-width: 480px) 
 
 @media (max-width: 480px){
     .recetasSub{
@@ -554,7 +573,7 @@ body{
     }
 }
 
-/* COMPLEMENTARIOS - @media (min-width: 1024px) */
+/* COMPLEMENTARIOS - @media (min-width: 1024px) 
 
 @media (min-width: 1024px){
 #grillacomplementarios{
@@ -571,19 +590,6 @@ body{
 }
 h1{
     text-align: center;
-}
-#filtrar{
-    grid-area: filtrar;
-    font-size: 1.5rem;
-    margin-left: 10vw;
-    max-width: 200px;
-    border: 1px solid black;
-    padding-left: 1vw;
-}
-#filtrar ul{
-    list-style: none;
-    margin-top: 2vh;
-    margin-left: 1vw;
 }
 
 section#listaProd{
@@ -611,7 +617,7 @@ section#listaProd{
 }
 }
 
-/* @media (max-width: 1024px) */
+/* @media (max-width: 1024px) 
 
 @media (max-width: 1024px){
 
@@ -656,7 +662,7 @@ section#listaProd{
         margin-top: 2vh;
     }
 }
-/*@MEDIA (max-width: 480px) */
+/*@MEDIA (max-width: 480px) 
 
 @media (max-width: 480px){
     .listaProductos li img{
@@ -666,77 +672,4 @@ section#listaProd{
 
 }
 
-/*CONTACTO* @media (min-width: 1024px) */
-
-@media (min-width: 1024px){
-
-.container{
-    text-align: center;       
-    flex-direction: column; 
-    border-radius: 10px;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-.form__contact{
-    background-color: #ccc;
-    margin: auto;
-    max-width: 300px;
-    padding: 30px 20px;
-    box-shadow: 0 5px 10px rgba(0 0 0 / 40%);
-    border-radius: 10px;
-    margin-bottom: 2.5px;    
-}
-.input__contact{
-    text-align: left;
-    padding-left: 3px;
-    border-radius: 5px;
-    margin-top: 5px;
-}
-.button__contact{
-    width: 70px;
-    text-align: center;
-    border-radius: 5px;
-}
-}
-
-/* @media (max-width: 1024px) */
-
-@media (max-width: 1024px){
-    .container{
-        text-align: center;       
-        flex-direction: column; 
-        border-radius: 10px;
-        display: flex;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-    .form__contact{
-        background-color: #ccc;
-        margin: auto;
-        max-width: 300px;
-        padding: 30px 20px;
-        box-shadow: 0 5px 10px rgba(0 0 0 / 40%);
-        border-radius: 10px;
-        margin-bottom: 2.5px;    
-    }
-    .input__contact{
-        text-align: left;
-        padding-left: 3px;
-        border-radius: 5px;
-        margin-top: 5px;
-    }
-    .button__contact{
-        width: 70px;
-        text-align: center;
-        border-radius: 5px;
-    }
-}
-
-/* Para este caso no tengo que hacer 
-modificaciones adicionales en el codigo porque ya es responsive */
-
-/*@MEDIA (max-width: 480px) */
-
-@media (max-width: 480px){
-}
+/*CONTACTO* */

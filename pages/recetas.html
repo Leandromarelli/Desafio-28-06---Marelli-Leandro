@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body> 
-  <div class="container-fluid">
+  <div class="container-fluid px-0 d-flex flex-column mt-auto h-100">
   <!-- NAV BS-->
-  <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+  <nav id="nav"class="navbar navbar-expand-lg navbar-light border-bottom">
     <div class="container-fluid row">
       <a class="navbar-brand col-sm-3 ml-5" href="../index.html">
         <img src="../assets/img/Olla Logo.png" alt="logo la titina - comidas" width="80" class="d-none d-lg-block">
@@ -47,64 +47,77 @@
 <header>
     <h1>Recetas y recomendaciones</h1>   
 </header>
-<div class="recetasContenedor">
-    <section class="recetasSub"><!--Se mostrará una publicación de instagram donde está el post con esa recomendación del plato-->
-        <div class="recetasLink">
-           <a>
-           <img src="../assets/img/sorrentinos.jpg" width="450" height="300" class="imgRedes">
-           </a>
-           <a href="https://www.instagram.com/Latitina" target="_blank" class="btn__instagram">Ver en Instagram</a>
-        </div>
-        <p class="recetaP">Si te gusta el malbec, estos sorrentinos de <span>berenjena ahumada</span> son especiales. Crean un maridaje perfecto si estuvo criado en roble frances. 
-               <br>Pueden estar en una Salsa Blanca como en una Rosa, o como me gusta a mi, salteados a la sarten con oliva y ajo. (Si queres, los tiras en la olla y cuando suben, los vas sacando y poniéndolos en una sarten donde tenes el aceite de oliva y el ajo).
-               <br><span>Cocción:</span> Cuando rompa el hervor, los tiras al agua y ni bien empiezan a levantarse, los sacas.
-               <br>Para decorarlo, pones la salsa encima de los sorrentinos, luego el queso, 3 hojitas de albahaca y a disfrutar.
-        </p>
-    </section>
-    <section class="recetasSub"><!--Se mostrará una publicación de instagram donde está el post con esa recomendación del plato-->
-        <div class="recetasLink">
-           <a>
-           <img src="../assets/img/tomateconfitado.jpg" width="450" height="300" class="imgRedes">
-           </a>
-           <a href="https://www.instagram.com/Latitina" target="_blank" class="btn__instagram">Ver en Instagram</a>
-        </div>
-        <p class="recetaP"> No se si alguna vez probaste esta mezcla de <span>tomates confitados y albahaca</span>. Si es así, sabes de que hablo, y si todavia no, te estas perdiendo de algo 
+<!-- CARDS ASIDE BS -->
+<aside class=" col-xs-1 col-sm-12 col-md-12 ">
+  <div class="d-flex flex-wrap mx-5 mb-4">
+    <div class="col">
+      <div class="card dropdown h-100 m-auto">
+        <img src="../assets/img/sorrentinos.jpg" class="card-img-top" alt="Sorrentinos">
+        <button class="btn btn-secondary dropdown-toggle btn-lg pe-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          tocá acá
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li></li><div class="card-body">
+              <h5 class="card-title">Sorrentinos</h5>
+              <p class="card-text h4">Si te gusta el malbec, estos sorrentinos de <span>berenjena ahumada</span> son especiales. Crean un maridaje perfecto si estuvo criado en roble frances. 
+                <br>Pueden estar en una Salsa Blanca como en una Rosa, o como me gusta a mi, salteados a la sarten con oliva y ajo. (Si queres, los tiras en la olla y cuando suben, los vas sacando y poniéndolos en una sarten donde tenes el aceite de oliva y el ajo).
+                <br>
+                <br>
+                <span>Cocción:</span> Cuando rompa el hervor, los tiras al agua y ni bien empiezan a levantarse, los sacas.
+                <br>Para decorarlo, pones la salsa encima de los sorrentinos, luego el queso, 3 hojitas de albahaca y a disfrutar.</p>
+            </div>
+            <a href="#" class="btn btn-outline-secondary p-2 ml-3">Ir a Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../assets/img/tomateconfitado.jpg" class="card-img-top" alt="Tomate confitado">
+        <div class="card-body">
+          <h5 class="card-title">Tomate confitado</h5>
+          <p class="card-text h4">No se si alguna vez probaste esta mezcla de <span>tomates confitados y albahaca</span>. Si es así, sabes de que hablo, y si todavia no, te estas perdiendo de algo 
             <br>muy interesante. Los podes combinar con cualquiera de nuestras salsas que van a quedar buenisimos. Dependiendo de la salsa, le haces el maridaje con la bebida que a nuestro criterio, es la mas llevadera.
-            <br> <span>Cocción:</span> Con el agua hirviendo, los tiras y a medida que empiezan a subir, los vas sacando. 
+            <br>
+            <br>
+            <span>Cocción:</span> Con el agua hirviendo, los tiras y a medida que empiezan a subir, los vas sacando. 
             <br> Los he comido con y sin queso, y de las dos maneras quedan exquistos.
-            <br> Que lo disfrutes! 
-        </p>
-    </section>    
-    <section class="recetasSub"><!--Se mostrará una publicación de instagram donde está el post con esa recomendación del plato-->
-        <div class="recetasLink">
-           <a>
-           <img src="../assets/img/sorrentinos.jpg" width="450" height="300" class="imgRedes">
-           </a>
-           <a href="https://www.instagram.com/Latitina" target="_blank" class="btn__instagram">Ver en Instagram</a>
+            <br> Que lo disfrutes!</p>
         </div>
-        <p class="recetaP">Si te gusta el malbec, estos sorrentinos de <span>berenjena ahumada</span> son especiales. Crean un maridaje perfecto si estuvo criado en roble frances. 
-               <br>Pueden estar en una Salsa Blanca como en una Rosa, o como me gusta a mi, salteados a la sarten con oliva y ajo. (Si queres, los tiras en la olla y cuando suben, los vas sacando y poniéndolos en una sarten donde tenes el aceite de oliva y el ajo).
-               <br><span>Cocción:</span> Cuando rompa el hervor, los tiras al agua y ni bien empiezan a levantarse, los sacas.
-               <br>Para decorarlo, pones la salsa encima de los sorrentinos, luego el queso, 3 hojitas de albahaca y a disfrutar.
-        </p>
-    </section>
-    <section class="recetasSub"><!--Se mostrará una publicación de instagram donde está el post con esa recomendación del plato-->
-        <div class="recetasLink">
-           <a>
-           <img src="../assets/img/sorrentinos.jpg" width="450" height="300" class="imgRedes">
-           </a>
-           <a href="https://www.instagram.com/Latitina" target="_blank" class="btn__instagram">Ver en Instagram</a>
+        <a href="#" class="btn btn-outline-secondary pb-2">Ir a Instagram</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../assets/img/Fetuccine.jpg" class="card-img-top" alt="Fetuccine">
+        <div class="card-body">
+          <h5 class="card-title">Fettucine</h5>
+          <p class="card-text h4">Siempre es un excelente momento para comer unos Fettucine. Estos son sin huevo, y le hicimos una salsa con queso descremado, cebolla de verdeo, pollo y pimienta. (viene sin sal, así le ponés a tu gusto)
+            <span>Cocción:</span>Siempre hacemos una masa al estilo italiana, con mas cuerpo por lo que ni bien se levanten, sacalos, los pasas al colador y listo para comer!
         </div>
-        <p class="recetaP">Si te gusta el malbec, estos sorrentinos de <span>berenjena ahumada</span> son especiales. Crean un maridaje perfecto si estuvo criado en roble frances. 
-               <br>Pueden estar en una Salsa Blanca como en una Rosa, o como me gusta a mi, salteados a la sarten con oliva y ajo. (Si queres, los tiras en la olla y cuando suben, los vas sacando y poniéndolos en una sarten donde tenes el aceite de oliva y el ajo).
-               <br><span>Cocción:</span> Cuando rompa el hervor, los tiras al agua y ni bien empiezan a levantarse, los sacas.
-               <br>Para decorarlo, pones la salsa encima de los sorrentinos, luego el queso, 3 hojitas de albahaca y a disfrutar.
-        </p>
-    </section>
-</div>
+        <a href="#" class="btn btn-outline-secondary pb-2">Ir a Instagram</a>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="../assets/img/noqui.png" class="card-img-top" alt="ñoquis">
+        <div class="card-body">
+          <h5 class="card-title">ñoquis</h5>
+          <p class="card-text h4">Somos amantes de la albahaca, el aceite de oliva y la pimienta, por eso si estabas con ganas de comer algo exquisito, te traemos estos Ñoquis que son una delicia. Tenemos en distintos sabores, de zanahoria, remolacha, calabaza o de papa (los de la foto). Tambien son sin huevo y tienen esa textura inigualable
+            <br><span>Cocción:</span> Cuando rompa el hervor, los tiras al agua y ni bien empiezan a levantarse, los sacas.
+            <br>Con o sin queso, pero siempre acompañado de un buen vino y de alguien que quieras pasar un hermoso momento. Disfrutalo!</p>
+        </div>
+        <a href="#" class="btn btn-outline-secondary pb-2">Ir a Instagram</a>
+      </div>
+    </div>
+  </div>
+</aside>
+<!-- END CARDS ASIDE BS-->
+
+</div> -->
 <footer class="bg-light text-center text-black">
   <!-- Grid container -->
-<div class="d-inline-flex bd-highlight container-fluid p-4 border-top justify-content-center" style="background-color: #ffffff;">
+<div class="d-inline-flex bd-highlight container-fluid py-4 px-0 mx-0 border-top justify-content-center" style="background-color: #ffffff;">
     <!-- Section: Social media -->
 <section class="mb-4 mr-6 col-11">
     <!-- Instagram -->

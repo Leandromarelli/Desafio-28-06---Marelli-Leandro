@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="../css/style.css">
 </head> 
 <body>
-<div class="container-fluid px-0 d-flex flex-column mt-auto h-100">
+<div class="d-flex flex-column container-fluid px-0 mt-auto h-100">
 <!-- NAV BS-->
 <nav id="nav" class="navbar navbar-expand-lg navbar-light border-buttom">
   <div class="container-fluid row">
     <a class="navbar-brand col-sm-3 ml-5" href="../index.html">
-      <img src="../assets/img/Olla Logo.png" alt="logo la titina - comidas" width="80" class="d-none d-lg-block">
+      <img src="../assets/img/Olla Logo.png" alt="logo la titina - comidas" width="80" class="d-none d-md-block d-lg-block d-xl-block">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -47,21 +47,21 @@
     <h1>Contacto</h1>
 </header>
 <!-- FORM BS -->
-<section class="d-flex flex-column justify-content-center">
-  <form class="container form-group">
-    <div class="mb-3 d-flex flex-column justify-content-center">
-        <input type="text" class="form" id="validationCustom01" value="Nombre" required>      
+<section class="row ml-5 mr-0">
+  <form class="container form mb-5 col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10" >
+    <div class="mb-3">
+        <input type="text" class="form col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="validationCustom01" value="Nombre" required>      
     </div>
-    <div class="mb-3 d-flex flex-column justify-content-center">
-        <input type="text" class="form" id="validationCustom01" value="Apellido" required>
+    <div class="mb-3  ">
+        <input type="text" class="form me-1 col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="validationCustom01" value="Apellido" required>
     </div>
-    <div class="mb-3 d-flex flex-column justify-content-center">
-      <input type="email" class="form" id="exampleInputEmail1" value="Correo electronico" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">(Nunca compartiremos tu correo electrónico con nadie)</div>
+    <div class="mb-3">
+      <input type="email" class="form col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="exampleInputEmail1" value="Correo electronico" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10">(Nunca compartiremos tu correo electrónico con nadie)</div>
     </div>
-    <div class="mb-3 d-flex flex-column justify-content-center">
-      <textarea class="form" id="exampleFormControlTextarea1" rows="7" value="Mensaje.."></textarea>
-    </div class="d-flex flex-column justify-content-center">
+    <div class="mb-3">
+      <textarea class="form col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="exampleFormControlTextarea1" rows="7" value="Mensaje.."></textarea>
+    </div class="justify-content-center">
     <button type="submit" class="btn btn-lg">Enviar Mensaje</button>
   </form>
 </section>

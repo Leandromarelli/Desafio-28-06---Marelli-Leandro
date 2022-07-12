@@ -1,0 +1,23 @@
+{
+  "name": "mi-proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leandromarelli/Desafio-28-06---Marelli-Leandro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leandromarelli/Desafio-28-06---Marelli-Leandro/issues"
+  },
+  "homepage": "https://github.com/Leandromarelli/Desafio-28-06---Marelli-Leandro#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

@@ -6,37 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <!-- Carga de css Bootstrap-->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <!-- Carga de mi css -->    
     <link rel="stylesheet" href="../css/style.css">
 </head> 
 <body>
 <div class="d-flex flex-column justify-content-between container-fluid px-0 mt-auto h-100">
 <!-- NAV BS-->
-<nav id="nav" class="navbar navbar-expand-lg navbar-light border-buttom">
-  <div class="container-fluid">
+<nav id="nav" class="navbar-expand-lg navbar-light border-buttom">
+  <div class="botonera">
     <a class="navbar-brand ml-5" href="../index.html">
       <img src="../assets/img/Olla Logo.png" alt="logo la titina - comidas" width="80" class="d-none d-md-block d-lg-block d-xl-block">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse col-sm-8" id="navbarNav">
+    <div class="collapse navbar-collapse col-sm-8 margin" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+          <a class="" aria-current="page" href="../index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="quequerescomer.html">Qué querés comer?</a>
+          <a class="" href="quequerescomer.html">Qué querés comer?</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="recetas.html">Recetas y Recomendaciones</a>
+          <a class="" href="recetas.html">Recetas y Recomendaciones</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="complementarios.html">Productos Complementarios</a>
+          <a class="" href="complementarios.html">Productos Complementarios</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contacto.html">CONTACTO</a>
+          <a class="" href="contacto.html">CONTACTO</a>
         </li>
       </ul>
     </div>
@@ -46,63 +46,77 @@
 <header> 
     <h1>Contacto</h1>
 </header>
-<!-- FORM BS -->
-<section class="row ml-5 mr-0">
-  <form class="container form mb-5 col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10" >
-    <div class="mb-3">
-        <input type="text" class="form col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="validationCustom01" value="Nombre" required>      
-    </div>
-    <div class="mb-3  ">
-        <input type="text" class="form me-1 col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="validationCustom01" value="Apellido" required>
-    </div>
-    <div class="mb-3">
-      <input type="email" class="form col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="exampleInputEmail1" value="Correo electronico" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10">(Nunca compartiremos tu correo electrónico con nadie)</div>
-    </div>
-    <div class="mb-3">
-      <textarea class="form col-xs-8 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="exampleFormControlTextarea1" rows="7" value="Mensaje.."></textarea>
-    </div class="justify-content-center">
-    <button type="submit" class="btn btn-lg">Enviar Mensaje</button>
-  </form>
+<section class="container contacto">
+    <p class="h3 text-center m-4">La calidad en un producto no se determina por si es buena o mala, es decir si nuestro producto te genera <span>placer al comerlo</span>, entonces es un excelente producto. De no ser así sólo es un buen producto y nada más.
+      <br>
+      <br>Pero la calidad tiene que ver con que el producto pueda mantenerse <span>con la misma sensación de satisfacción</span> para cada vez que lo pruebes. 
+      <br>
+      <br>Por eso es que queremos que, ante cualquier inquietud, nos escribas y nos digas si todo salió como esperabas o no. <br>Hacemos esto para vos, por eso es tan importante para nosotros. Gracias!
+    </p>
 </section>
+
+<!-- FORM BS -->
+  <form>
+    <ul>
+      <li>
+        <input type="text" class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="validationCustom01" value="Nombre">
+      </li>      
+      <li>
+        <input type="text" class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="validationCustom01" value="Apellido">
+      </li>
+      <li>
+        <input type="email" class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10" id="exampleInputEmail1" value="Correo electronico">
+      </li>
+      <li>
+        <p>(Nunca compartiremos tu correo electrónico con nadie)<p>
+      </li>
+      <li>
+        <textarea type="text" class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10" value="Mensaje..."></textarea>
+      </li>
+      <li>
+        <button type="submit">Enviar Mensaje</button>
+      </li>
+    </ul>  
+  </form>
 <!-- END FORM BS -->
-<footer class="bg-light text-center text-black h-auto d-block">
-    <!-- Grid container -->
-  <div class="d-inline-flex bd-highlight container-fluid py-4 px-0 mx-0 border-top justify-content-center" style="background-color: #ffffff;">
-        <!-- Section: Social media -->
-    <section class="mb-4 mr-6 col-11">
-        <!-- Instagram -->
-      <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
-          <img src="../assets/img/instagram.png" alt="logo instagram" width="20px" height="20px">
-      </a>
-        <!-- Facebook  -->
-        <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
-          <img src="../assets/img/facebook.png" alt="logo facebook" width="20px" 
-          height="20px"  >
-      </a>
-        <!-- Youtube -->
-        <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
-          <img src="../assets/img/youtube.png" alt="logo youtube" width="20px" 
-          height="20px"  >
-      </a>
-        <!-- Whatsapp -->
-      <a class="btn m-1" style="background-color: #ffffff;"href="#"role="button">
-          <img src="../assets/img/whatsapp.png" alt="logo whatsapp" width="20px" 
-          height="20px">
-      </a>
-    </section>
-        <!-- Section: Social media -->
-    <a href="#nav">
-        <button type="button" class="btn btn-lg btn-secondary text-dark " style="background-color: #fff">subir</button>
-    </a>
-  </div>
-    <!-- Grid container -->
-    <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);"> © 2022 Copyright:
-     <a class="text-dark" href="https://latitina.com/"> Latitina.com</a>
-  </div>
-    <!-- Copyright -->
+<div class="button">
+  <a href="#nav">
+    <button type="button" class="btn btn-lg subir">subir</button>
+    <img src="../assets/img/arrowtop.png" alt="flecha subir">
+  </a>
+</div>
+<!-- footer BS -->
+<footer class="">
+  <!-- Section: Social media -->
+<section class="">
+  <!-- Instagram -->
+<a class="btn" style="background-color: #ffffff;"href="#"role="button">
+    <img src="../assets/img/instagram.png" alt="logo instagram" width="20px" height="20px">
+</a>
+  <!-- Facebook  -->
+  <a class="btn" style="background-color: #ffffff;"href="#"role="button">
+    <img src="../assets/img/facebook.png" alt="logo facebook" width="20px" 
+    height="20px"  >
+</a>
+  <!-- Youtube -->
+  <a class="btn" style="background-color: #ffffff;"href="#"role="button">
+    <img src="../assets/img/youtube.png" alt="logo youtube" width="20px" 
+    height="20px"  >
+</a>
+  <!-- Whatsapp -->
+<a class="btn" style="background-color: #ffffff;"href="#"role="button">
+    <img src="../assets/img/whatsapp.png" alt="logo whatsapp" width="20px" 
+    height="20px">
+</a>
+</section>
+<!-- Section: Social media -->
+<!-- Copyright -->
+<div class="text-center p-3 socalo"> © 2022 Copyright:
+   <a class="text-dark" href="https://latitina.com/"> Latitina.com</a>
+</div>
+  <!-- Copyright -->
 </footer>
+<!-- END FOOTER BS -->
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
 integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 

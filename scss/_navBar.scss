@@ -1,0 +1,28 @@
+.botonera{
+    display: flex;
+    flex-direction: row;
+    font-family: $ff-oswald;
+    font-size: $textsm;
+    align-items: center;
+    img{
+        max-width: 100px;
+    }
+    .margin{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+    }
+    a{
+       color: $title;
+       margin-inline: $margin1;
+       text-decoration: none;
+       padding: 3px;
+       border-radius: 5px;
+       &:hover{
+           background-color: $ection;
+           cursor: pointer;
+           transition: 200ms;
+       }
+       
+    }
+}

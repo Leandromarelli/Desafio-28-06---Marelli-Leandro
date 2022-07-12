@@ -1,0 +1,108 @@
+@mixin text($font-size, $font-family, $color){
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $color;
+}
+@mixin hover($background-color, $cursor){
+    background-color: $background-color;
+    cursor: $cursor;
+}
+
+@mixin flexCenter($jcenter,$fdirection){
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $fdirection;
+}
+
+h1{
+    font-family: $ff-beba;
+    font-size: $textlg;
+    text-align: center;
+    margin: $margin3;
+}
+h2{
+    font-family: $ff-beba;
+}
+h3{
+    @include text($textmd,$ff-oswald,black);
+    text-align:start;
+    margin-left: 2em;
+    text-decoration: underline;
+}
+p{
+    font-family: $ff-oswald;
+}
+
+// PAGE - CONTACTO 
+form{
+    margin: 10vh auto 10vh auto;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    background-color: $background;
+    border-radius: 5px;
+    box-shadow: 3px 5px $ection;
+    ul{
+        font-family: $ff-fredoka;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        li{
+            width: 50vw;
+            margin: $margin0;
+           button{
+               border: none;
+               border-radius: 5px;
+               &:hover{
+                background-color: $ection;
+                cursor: pointer;
+                transition: 200ms;
+               }
+           }
+           textarea{
+                height: 30vh;
+           }
+        }
+    }
+  
+}
+// BOTON SUBIR
+
+div.button{
+    display: flex;
+    justify-content: flex-end;
+    a{ 
+        text-decoration: none;
+        background-color: $ection;
+        border-radius: 5px;
+        position:sticky;
+        &:hover{
+            background-color: $background;
+            cursor: pointer;
+            transition: 200ms;
+        }
+        img{
+            text-decoration: none;
+            background-color: $ection;
+            padding-left: 0%;
+            &:hover{
+                background-color: $background;
+                cursor: pointer;
+                transition: 200ms;
+             }
+
+        }
+    }
+}
+// PAGE - QUE QUERES COMER?
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .orden{
+        display: flex;
+        flex-direction: row;
+
+        }
+}

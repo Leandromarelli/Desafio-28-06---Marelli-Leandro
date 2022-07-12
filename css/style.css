@@ -1,27 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
-html{
-    font-size: 62.5%;
-    height: 100vh;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    font-weight: bold;
-    font-family: 'oswald';
-    height: 100vh;
-}  
-h1{
-    font-size: 5rem;
-    text-align: center;
-    color: black;
-    margin-top: 0px;
-    margin-bottom: 50px;
-    padding: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka+One&family=Oswald&display=swap");
+h1 {
+  font-family: "bebas neue", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 3rem;
 }
 
-nav ul{
-    font-size: 2em;
-    gap: 2em;
+h2 {
+  font-family: "bebas neue", sans-serif;
 }
 
+h3 {
+  font-size: 2rem;
+  font-family: "oswald", sans-serif;
+  color: black;
+  text-align: start;
+  margin-left: 2em;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "oswald", sans-serif;
+}
+
+form {
+  margin: 10vh auto 10vh auto;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(195, 197, 192, 0.8039215686);
+  border-radius: 5px;
+  box-shadow: 3px 5px #B3B3B3;
+}
+form ul {
+  font-family: "fredoka one", cursive;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form ul li {
+  width: 50vw;
+  margin: 0.5rem;
+}
+form ul li button {
+  border: none;
+  border-radius: 5px;
+}
+form ul li button:hover {
+  background-color: #B3B3B3;
+  cursor: pointer;
+  transition: 200ms;
+}
+form ul li textarea {
+  height: 30vh;
+}
+
+div.button {
+  display: flex;
+  justify-content: flex-end;
+}
+div.button a {
+  text-decoration: none;
+  background-color: #B3B3B3;
+  border-radius: 5px;
+  position: sticky;
+}
+div.button a:hover {
+  background-color: rgba(195, 197, 192, 0.8039215686);
+  cursor: pointer;
+  transition: 200ms;
+}
+div.button a img {
+  text-decoration: none;
+  background-color: #B3B3B3;
+  padding-left: 0%;
+}
+div.button a img:hover {
+  background-color: rgba(195, 197, 192, 0.8039215686);
+  cursor: pointer;
+  transition: 200ms;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+article .orden {
+  display: flex;
+  flex-direction: row;
+}
+
+.botonera {
+  display: flex;
+  flex-direction: row;
+  font-family: "oswald", sans-serif;
+  font-size: 1.5rem;
+  align-items: center;
+}
+.botonera img {
+  max-width: 100px;
+}
+.botonera .margin {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 1rem;
+}
+.botonera a {
+  color: #0D0D0D;
+  margin-inline: 1rem;
+  text-decoration: none;
+  padding: 3px;
+  border-radius: 5px;
+}
+.botonera a:hover {
+  background-color: #B3B3B3;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+footer section {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #0D0D0D;
+}
+footer section a {
+  margin-bottom: 2rem;
+}
+footer .socalo {
+  background-color: #B3B3B3;
+}
+
+/*# sourceMappingURL=style.css.map */

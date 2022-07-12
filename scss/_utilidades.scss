@@ -1,0 +1,17 @@
+
+@mixin flexCenter($jcenter,$fdirection){
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $fdirection;
+}
+
+@mixin hover($background, $pointer){
+    background-color: $background;
+    cursor: $pointer;
+}
+
+@mixin text($font-size, $line-height, $color){
+        font-size: $size;
+        line-height: $line-height;
+        color: $color;
+    }

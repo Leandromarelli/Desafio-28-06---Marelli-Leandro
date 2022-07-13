@@ -1,5 +1,5 @@
 
-@mixin flexCenter($jcenter,$fdirection){
+@mixin flexCenter($justify,$fdirection){
     display: flex;
     justify-content: $justify;
     flex-direction: $fdirection;
@@ -15,3 +15,4 @@
         line-height: $line-height;
         color: $color;
     }
+

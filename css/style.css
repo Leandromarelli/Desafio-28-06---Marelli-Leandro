@@ -46,12 +46,12 @@ div.button a img:hover {
   transition: 300ms;
 }
 
-.btn-redes, .btn-outline-secondary {
+.btn-redes, .btn-outline-secondary, .form-check-label {
   font-size: 1rem;
   font-family: "fredoka one", cursive;
   color: #0D0D0D;
 }
-.btn-redes:hover, .btn-outline-secondary:hover {
+.btn-redes:hover, .btn-outline-secondary:hover, .form-check-label:hover {
   opacity: 0.9;
 }
 
@@ -73,10 +73,8 @@ article .orden {
   cursor: pointer;
 }
 
-.form-check-label {
-  font-size: 1rem;
-  font-family: "fredoka one", cursive;
-  color: #0D0D0D;
+.form-check-label:hover {
+  cursor: pointer;
 }
 
 .card-img-top {
@@ -149,7 +147,7 @@ form ul li textarea {
 }
 .botonera div {
   display: flex;
-  justify-content: flex-end;
+  justify-content: end;
 }
 .botonera div a {
   color: #0D0D0D;

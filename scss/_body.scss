@@ -92,7 +92,10 @@ article{
     }
 }
 .form-check-label{
-    @include text($textxs,$ff-fredoka,$title);
+    @extend .btn-redes;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 // PAGE - RECETAS
@@ -134,7 +137,6 @@ form{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        // padding-left: 0%;
         li{
             width: 50vw;
             margin: $margin0;

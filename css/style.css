@@ -46,13 +46,31 @@ div.button a img:hover {
   transition: 300ms;
 }
 
-.btn-redes, .btn-outline-secondary, .form-check-label {
+.border {
+  margin-bottom: 2rem;
+}
+
+.btn-redes {
   font-size: 1rem;
   font-family: "fredoka one", cursive;
-  color: #0D0D0D;
+  color: white;
 }
-.btn-redes:hover, .btn-outline-secondary:hover, .form-check-label:hover {
-  opacity: 0.9;
+.btn-redes:hover {
+  cursor: pointer;
+  transform: translate(0, -15px);
+  transition: 300ms;
+  color: white;
+}
+
+.imginicio {
+  max-width: 800px;
+  max-height: 600px;
+  border-radius: 5px;
+}
+
+.slide {
+  background-color: #0D0D0D;
+  border-radius: 5px;
 }
 
 article {
@@ -73,6 +91,12 @@ article .orden {
   cursor: pointer;
 }
 
+.form-check-label {
+  font-size: 1rem;
+  font-family: "fredoka one", cursive;
+  color: #0D0D0D;
+  margin-left: 5px;
+}
 .form-check-label:hover {
   cursor: pointer;
 }
@@ -86,6 +110,11 @@ article .orden {
   transition: 300ms;
 }
 
+.btn-outline-secondary {
+  font-size: 1rem;
+  font-family: "fredoka one", cursive;
+  color: #0D0D0D;
+}
 .btn-outline-secondary:hover {
   background-color: #B3B3B3;
   color: #0D0D0D;
@@ -96,11 +125,24 @@ article .orden {
   font-family: "fredoka one", cursive;
 }
 
+.btn-ig {
+  font-size: 1rem;
+  font-family: "fredoka one", cursive;
+  color: white;
+}
+.btn-ig:hover {
+  background-color: #B3B3B3;
+  transition: 300ms;
+}
+
+@media (min-width: 992px) {
+  .btn-outline-secondary {
+    display: none;
+  }
+}
 form {
-  margin: 10vh auto 10vh auto;
-  padding-top: 5vh;
-  padding-left: 10vh;
-  padding-right: 10vh;
+  margin: 3vh auto 3vh auto;
+  padding: 5vh;
   display: flex;
   justify-content: center;
   background-color: rgba(216, 217, 215, 0.8039215686);
@@ -111,12 +153,15 @@ form ul {
   font-family: "fredoka one", cursive;
   list-style: none;
   display: flex;
+  padding-left: 0%;
   flex-direction: column;
   justify-content: center;
 }
 form ul li {
   width: 50vw;
   margin: 0.5rem;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 form ul li input {
   border-radius: 5px;
@@ -135,6 +180,11 @@ form ul li textarea {
   height: 30vh;
   border-radius: 5px;
   border: none;
+}
+
+.box {
+  padding-right: 0px;
+  margin-right: 0px;
 }
 
 .botonera {
